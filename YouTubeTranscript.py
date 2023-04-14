@@ -2,9 +2,12 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from isodate import parse_duration
+import os
+from dotenv import load_dotenv
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
+load_dotenv()
 nltk.download('vader_lexicon')
 
 def get_transcript(videoID):
@@ -26,7 +29,7 @@ from isodate import parse_duration
 
 
 def modify_transcript(limit1,limit2,video_id,string_format):
-  if get_youtube_video_duration(video_id,"AIzaSyAjk8P9NEXl_wR6G9crX-qb43wiLzMgvno") >= float(limit1) and get_youtube_video_duration(video_id,"AIzaSyAjk8P9NEXl_wR6G9crX-qb43wiLzMgvno") <= float(limit2):
+  if get_youtube_video_duration(video_id,os.getenv("api_key")) >= float(limit1) and get_youtube_video_duration(video_id,os.getenv("api_key")) <= float(limit2):
     transcript =  join_most_sophisticated_sentences(string_format,500)
     print('method 2')
     return transcript
