@@ -26,17 +26,20 @@ from TextScoring import *
 
 
 class TFIDFEvaluation:
+        
+    
     def __init__(self, videoID):
-        self.text = get_transcript(videoID)
-        self.text = self.text.lower()
-        self.total_words = self.text.split()
-        array_extend(sw,sw_spacy)
-        array_extend(sw,custom_stopwords)
-        array_extend(sw,pronouns)
-        array_extend(sw,nouns)
+
+        self.text = get_transcript(videoID) # Fetch the transcript of the video
+        self.text = self.text.lower() # Convert the text to lowercase
+        self.total_words = self.text.split() # Split the text into individual words
+        array_extend(sw, sw_spacy) # Extend the stopword list with spaCy stopword list
+        array_extend(sw, custom_stopwords) # Extend the stopword list with custom stopword list
+        array_extend(sw, pronouns) # Extend the stopword list with pronouns list
+        array_extend(sw, nouns) # Extend the stopword list with nouns list
         # Tokenize the text
         self.tokens = word_tokenize(self.text)  
-        self.total_sentences = tokenize.sent_tokenize(self.text)
+        self.total_sentences = sent_tokenize(self.text)
         self.total_sentences_1 = []
         self.total_sent_len = int(0)
         self.tf_score = {}
@@ -44,6 +47,7 @@ class TFIDFEvaluation:
         self.tf_idf_score_new = {}
         self.tf_idf_score = {}
         self.tf_idf_score_n = {}
+      
 
     def lower_case_conversion(self):
         for sent in self.total_sentences:
