@@ -1,17 +1,17 @@
-
 # Sapphire
 
 Sapphire is a NLP based model that ranks transcripts from a given YouTube video with the help of TFIDF scores from a single trancript.
 
-
 # Mission
 
 To improve ranking results for educational purposes
+
 # Vision
 
 Create a smarter world where the best sources are provided to users
 
 ## table of contents
+
     1.Why?
     2.Overview
     3.How it works(shallow)?
@@ -27,7 +27,6 @@ The standard method used for ranking YouTube Videos, which is "watch time" (rati
 # How it works(simple)?
 
 When provided with a YouTube video transcript performs various text processing tasks using several Python libraries including NLTK, spaCy, and scikit-learn.
-
 
 The tasks include:
 
@@ -53,13 +52,10 @@ The tasks include:
 
 [Documentation](https://linktodocumentation)
 
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
 ## Appendix
 
 Any additional information goes here
-

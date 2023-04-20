@@ -1,5 +1,5 @@
-#find a module(cython) to do it
-def levenshtein_distance(str1:str, str2:str) ->int:
+# find a module(cython) to do it
+def levenshtein_distance(str1: str, str2: str) -> int:
     """
     Computes the Levenshtein distance between two strings.
 
@@ -10,7 +10,7 @@ def levenshtein_distance(str1:str, str2:str) ->int:
     Returns:
     int: The Levenshtein distance between the two strings.
     """
-    
+
     m = len(str1)
     n = len(str2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]

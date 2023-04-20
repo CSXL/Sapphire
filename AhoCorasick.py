@@ -1,10 +1,13 @@
+from typing import Dict
+
 import ahocorasick
+
 from LevensteinDistance import *
 
 
-from typing import Dict
-
-def get_closest_score_from_tfidf_dict(key_from_tfidf: str, freq_dist_dict: Dict[str, float]) -> str:
+def get_closest_score_from_tfidf_dict(
+    key_from_tfidf: str, freq_dist_dict: Dict[str, float]
+) -> str:
     """
     Returns the closest key to key_from_tfidf in freq_dist_dict, based on the Levenshtein distance.
 
@@ -17,7 +20,7 @@ def get_closest_score_from_tfidf_dict(key_from_tfidf: str, freq_dist_dict: Dict[
 
     """
     import ahocorasick
-    
+
     # create an Aho-Corasick automaton from the keys in freq_dist_dict
     automaton = ahocorasick.Automaton()
     for key in freq_dist_dict.keys():
@@ -26,7 +29,7 @@ def get_closest_score_from_tfidf_dict(key_from_tfidf: str, freq_dist_dict: Dict[
 
     # find the closest match for key_from_tfidf in the automaton
     closest_match = None
-    closest_distance = float('inf')
+    closest_distance = float("inf")
     for end_index, key in automaton.iter(key_from_tfidf):
         distance = levenshtein_distance(key, key_from_tfidf)
         if distance < closest_distance:

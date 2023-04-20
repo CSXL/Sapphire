@@ -1,10 +1,12 @@
-from AhoCorasick import *
 from operator import itemgetter
-
-
 from typing import Dict, List
 
-def text_scoring(ranked_keywords: Dict[str, float], freq_dist: Dict[str, float], threshold_n: int) -> float:
+from AhoCorasick import *
+
+
+def text_scoring(
+    ranked_keywords: Dict[str, float], freq_dist: Dict[str, float], threshold_n: int
+) -> float:
     """
     Calculates the text score for a given set of ranked keywords, frequency distribution, and threshold value.
 
@@ -34,6 +36,7 @@ def text_scoring(ranked_keywords: Dict[str, float], freq_dist: Dict[str, float],
 
 from operator import itemgetter
 from typing import Dict
+
 
 def get_n_val(average_td_idf_score: float, score_json: Dict[str, float]) -> int:
     """

@@ -1,23 +1,32 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import nltk #Used for performing standard NLP tasks like lexical analysis
-from nltk.tokenize import word_tokenize #Used for tokenizing individual words for weightage evaluation
-from nltk.corpus import stopwords #Use stopwords to hold unnecessary words as residue
-from nltk.probability import FreqDist #Used for calculating the frequency of tokens in a corpus
-import math # used for performing the log operation in IDF evaluation
-from nltk import tokenize #Tokenizing words specifically for dictionary mapping(to result in score prediction)
-import spacy #Load a new set of stopwords
-from sklearn.feature_extraction.text import TfidfVectorizer #Evaluate TF-IDF score using cython
+import math  # used for performing the log operation in IDF evaluation
 
-nltk.download('stopwords')
-nltk.download('punkt')
+import nltk  # Used for performing standard NLP tasks like lexical analysis
+import spacy  # Load a new set of stopwords
+from nltk import (  # Tokenizing words specifically for dictionary mapping(to result in score prediction)
+    tokenize,
+)
+from nltk.corpus import stopwords  # Use stopwords to hold unnecessary words as residue
+from nltk.probability import (  # Used for calculating the frequency of tokens in a corpus
+    FreqDist,
+)
+from nltk.tokenize import (  # Used for tokenizing individual words for weightage evaluation
+    word_tokenize,
+)
+from sklearn.feature_extraction.text import (  # Evaluate TF-IDF score using cython
+    TfidfVectorizer,
+)
 
-from AbstractFunctions import *  
-from stopwords import *  
-from YouTubeTranscript import *  
-from EvaluationFunction import *  
-from TFIDFEvaluation import *  
-from KeywordQualification import *  
+nltk.download("stopwords")
+nltk.download("punkt")
+
+from AbstractFunctions import *
+from EvaluationFunction import *
+from KeywordQualification import *
+from stopwords import *
+from TFIDFEvaluation import *
+from YouTubeTranscript import *
 
 
 def Sapphire(videoID):
@@ -54,5 +63,4 @@ def Sapphire(videoID):
     return float(rank_score)
 
 
-
-print(Sapphire('h0e2HAPTGF4'))
+print(Sapphire("h0e2HAPTGF4"))

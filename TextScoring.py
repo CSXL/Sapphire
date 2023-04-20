@@ -1,4 +1,6 @@
 from EvaluationFunction import *
+
+
 def InformationalRetrievalRank(qualified_terms, freq_dist, qualification):
     """
     Computes a score for a document based on its frequency distribution and the frequency of qualified terms.

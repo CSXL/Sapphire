@@ -1,9 +1,7 @@
-from AbstractFunctions import *
-from EvaluationFunction import *
-
-
 from typing import List, Tuple
 
+from AbstractFunctions import *
+from EvaluationFunction import *
 
 
 class KeywordQualification:
@@ -34,7 +32,9 @@ class KeywordQualification:
         avg_td_idf_score = average_td_idf_score(tf_idf_scores)
         return get_n_val(avg_td_idf_score, tf_idf_scores)
 
-    def get_qualified_terms(self, tf_idf_scores: List[float]) -> List[Tuple[str, float]]:
+    def get_qualified_terms(
+        self, tf_idf_scores: List[float]
+    ) -> List[Tuple[str, float]]:
         """
         Returns the top terms based on their term-document IDF score.
 
@@ -56,4 +56,3 @@ class KeywordQualification:
 
         """
         return self.freq_dist, self.qualification, self.qualified_terms
-
