@@ -1,5 +1,5 @@
 from operator import itemgetter
-from typing import Dict, List
+from typing import Dict
 
 from AhoCorasick import *
 
@@ -11,11 +11,13 @@ def text_scoring(
     Calculates the text score for a given set of ranked keywords, frequency distribution, and threshold value.
 
     Args:
+    ----
         ranked_keywords: A dictionary mapping string keywords to float scores.
         freq_dist: A dictionary mapping string keywords to float frequency distributions.
         threshold_n: An integer threshold value for normalization.
 
     Returns:
+    -------
         The calculated text score as a float.
 
     """
@@ -43,10 +45,12 @@ def get_n_val(average_td_idf_score: float, score_json: Dict[str, float]) -> int:
     Returns the number of terms in score_json with a score greater than or equal to average_td_idf_score.
 
     Args:
+    ----
         average_td_idf_score: A float representing the average TF-IDF score.
         score_json: A dictionary mapping string terms to float TF-IDF scores.
 
     Returns:
+    -------
         An integer representing the number of terms with a score greater than or equal to average_td_idf_score.
 
     """
@@ -62,10 +66,12 @@ def get_top_n(dict_elem: Dict[str, float], n: int) -> Dict[str, float]:
     Returns the top n elements from dict_elem based on their values.
 
     Args:
+    ----
         dict_elem: A dictionary mapping string keys to float values.
         n: An integer representing the number of elements to return.
 
     Returns:
+    -------
         A dictionary mapping the top n keys with their values from dict_elem, sorted by descending value.
 
     """

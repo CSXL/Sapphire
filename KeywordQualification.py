@@ -10,6 +10,7 @@ class KeywordQualification:
         Initializes a KeywordQualification object.
 
         Args:
+        ----
             tokens: A list of tokens.
             tf_idf_scores: A list of term-document IDF scores.
 
@@ -23,9 +24,11 @@ class KeywordQualification:
         Returns the qualification threshold based on the average term-document IDF score.
 
         Args:
+        ----
             tf_idf_scores: A list of term-document IDF scores.
 
         Returns:
+        -------
             The nth highest term-document IDF score, where n is the average term-document IDF score.
 
         """
@@ -39,9 +42,11 @@ class KeywordQualification:
         Returns the top terms based on their term-document IDF score.
 
         Args:
+        ----
             tf_idf_scores: A list of term-document IDF scores.
 
         Returns:
+        -------
             A list of tuples, where each tuple contains a term and its corresponding term-document IDF score.
 
         """
@@ -51,7 +56,8 @@ class KeywordQualification:
         """
         Returns the frequency distribution, qualification threshold, and top terms.
 
-        Returns:
+        Returns
+        -------
             A tuple containing the frequency distribution (dict), qualification threshold (float), and top terms (list of tuples).
 
         """

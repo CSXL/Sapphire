@@ -1,22 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import math  # used for performing the log operation in IDF evaluation
 
 import nltk  # Used for performing standard NLP tasks like lexical analysis
-import spacy  # Load a new set of stopwords
-from nltk import (  # Tokenizing words specifically for dictionary mapping(to result in score prediction)
-    tokenize,
-)
-from nltk.corpus import stopwords  # Use stopwords to hold unnecessary words as residue
-from nltk.probability import (  # Used for calculating the frequency of tokens in a corpus
-    FreqDist,
-)
-from nltk.tokenize import (  # Used for tokenizing individual words for weightage evaluation
-    word_tokenize,
-)
-from sklearn.feature_extraction.text import (  # Evaluate TF-IDF score using cython
-    TfidfVectorizer,
-)
 
 nltk.download("stopwords")
 nltk.download("punkt")
@@ -34,9 +19,11 @@ def Sapphire(videoID):
     Returns the rank score of a video using the Sapphire algorithm.
 
     Args:
+    ----
     - videoID (str): The ID of the video to be evaluated.
 
     Returns:
+    -------
     - float: The rank score of the video.
 
     """
@@ -53,7 +40,7 @@ def Sapphire(videoID):
     ir_evaluator.filter_words()
 
     # Perform keyword qualification
-    fallback_evaluation = ir_evaluator.fallback_evaluation()
+    ir_evaluator.fallback_evaluation()
     k_qualifier = KeywordQualification(ir_evaluator.tokens, ir_evaluator.tf_idf_score)
     (freq_dist, qualification, qualified_terms) = k_qualifier.show()
 

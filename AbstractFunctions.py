@@ -1,6 +1,3 @@
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
-from isodate import parse_duration
 from nltk.probability import FreqDist
 from nltk.tokenize import sent_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -11,10 +8,12 @@ def array_extend(arr1, arr2):
     Extends the first array with the elements of the second array.
 
     Args:
+    ----
     arr1 (list): The first array to be extended.
     arr2 (list): The second array containing elements to add to arr1.
 
     Returns:
+    -------
     None
     """
     # Hint: In the loop, you need to append `element` to `arr1`, not `arr1` to `arr1`.

@@ -21,9 +21,11 @@ def get_transcript(video_id: str) -> str:
     Retrieves the transcript of a YouTube video.
 
     Args:
+    ----
         video_id (str): The ID of the YouTube video to retrieve the transcript for.
 
     Returns:
+    -------
         transcript (str): The transcript of the video.
     """
     json_list = YouTubeTranscriptApi.get_transcript(video_id, languages=["en", "en-US"])
@@ -39,9 +41,11 @@ def get_string_format(json_list: list) -> str:
     Formats the transcript JSON into a string format.
 
     Args:
+    ----
         json_list (list): A list of transcript segments in JSON format.
 
     Returns:
+    -------
         string (str): A formatted string containing the transcript text.
     """
     string = ""
@@ -63,12 +67,14 @@ def modify_transcript(
     Modifies the transcript string based on the duration of the video.
 
     Args:
+    ----
         limit1 (str): The lower limit of the video duration range to modify the transcript for.
         limit2 (str): The upper limit of the video duration range to modify the transcript for.
         video_id (str): The ID of the YouTube video to retrieve the transcript for.
         string_format (str): The original transcript string to modify.
 
     Returns:
+    -------
         transcript (str): The modified transcript string.
     """
     if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
@@ -87,10 +93,12 @@ def get_youtube_video_duration(video_id: str, api_key: str) -> float:
     Returns the duration of a YouTube video given its video ID using the YouTube Data API.
 
     Args:
+    ----
         video_id (str): The ID of the YouTube video.
         api_key (str): Your YouTube Data API key.
 
     Returns:
+    -------
         float: The duration of the video in seconds.
     """
 
@@ -118,10 +126,12 @@ def join_most_sophisticated_sentences(text, num_sentences):
     Joins the most sophisticated sentences of a text (string) together.
 
     Args:
+    ----
         text (str): The input text.
         num_sentences (int): The number of sophisticated sentences to join.
 
     Returns:
+    -------
         str: The joined sophisticated sentences of the input text.
     """
     if len(text) == 0:
