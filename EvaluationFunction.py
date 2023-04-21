@@ -1,24 +1,24 @@
 from operator import itemgetter
 from typing import Dict
 
-from AhoCorasick import *
+from AhoCorasick import get_closest_score_from_tfidf_dict
 
 
 def text_scoring(
     ranked_keywords: Dict[str, float], freq_dist: Dict[str, float], threshold_n: int
 ) -> float:
     """
-    Calculates the text score for a given set of ranked keywords, frequency distribution, and threshold value.
+    To calculate the text score using a given set of ranked keywords, frequency distribution, and threshold value, follow these instructions.
 
-    Args:
-    ----
-        ranked_keywords: A dictionary mapping string keywords to float scores.
-        freq_dist: A dictionary mapping string keywords to float frequency distributions.
-        threshold_n: An integer threshold value for normalization.
+        Args:
+        ----
+            ranked_keywords: A dictionary mapping string keywords to float scores.
+            freq_dist: A dictionary mapping string keywords to float frequency distributions.
+            threshold_n: An integer threshold value for normalization.
 
-    Returns:
-    -------
-        The calculated text score as a float.
+        Returns:
+        -------
+            The calculated text score as a float.
 
     """
     # calculate the sum of scores weighted by frequency distribution
@@ -36,22 +36,18 @@ def text_scoring(
     return float(num / threshold_n)
 
 
-from operator import itemgetter
-from typing import Dict
-
-
 def get_n_val(average_td_idf_score: float, score_json: Dict[str, float]) -> int:
     """
-    Returns the number of terms in score_json with a score greater than or equal to average_td_idf_score.
+    To obtain the count of terms in score_json that have a score greater than or equal to the average_td_idf_score, follow this instruction.
 
-    Args:
-    ----
-        average_td_idf_score: A float representing the average TF-IDF score.
-        score_json: A dictionary mapping string terms to float TF-IDF scores.
+        Args:
+        ----
+            average_td_idf_score: A float representing the average TF-IDF score.
+            score_json: A dictionary mapping string terms to float TF-IDF scores.
 
-    Returns:
-    -------
-        An integer representing the number of terms with a score greater than or equal to average_td_idf_score.
+        Returns:
+        -------
+            An integer representing the number of terms with a score greater than or equal to average_td_idf_score.
 
     """
     count = 0
@@ -63,7 +59,7 @@ def get_n_val(average_td_idf_score: float, score_json: Dict[str, float]) -> int:
 
 def get_top_n(dict_elem: Dict[str, float], n: int) -> Dict[str, float]:
     """
-    Returns the top n elements from dict_elem based on their values.
+    To obtain the top n elements from dict_elem based on their values, follow these instructions.
 
     Args:
     ----

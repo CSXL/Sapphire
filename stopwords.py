@@ -1,9 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# Custom stopwords
+import nltk
 import spacy
 from nltk.corpus import stopwords
 
-# Custom stopwords
+nltk.download("stopwords")
 
 custom_stopwords = [
     "this",

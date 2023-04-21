@@ -3,24 +3,20 @@
 
 import nltk  # Used for performing standard NLP tasks like lexical analysis
 
-nltk.download("stopwords")
+from KeywordQualification import KeywordQualification
+from TextScoring import InformationalRetrievalRank
+from TFIDFEvaluation import TFIDFEvaluation
+
 nltk.download("punkt")
 
-from AbstractFunctions import *
-from EvaluationFunction import *
-from KeywordQualification import *
-from stopwords import *
-from TFIDFEvaluation import *
-from YouTubeTranscript import *
 
-
-def Sapphire(videoID):
+def Sapphire(videoID: str) -> float:
     """
-    Returns the rank score of a video using the Sapphire algorithm.
+    To get the rank score of the YouTube video(videoID) using the Sapphire algorithm, follow these steps.
 
     Args:
     ----
-    - videoID (str): The ID of the video to be evaluated.
+    - videoID (str): The unique identification of a YouTube video.
 
     Returns:
     -------
@@ -50,4 +46,4 @@ def Sapphire(videoID):
     return float(rank_score)
 
 
-print(Sapphire("h0e2HAPTGF4"))
+print(Sapphire("MsnQ5uepIaE"))

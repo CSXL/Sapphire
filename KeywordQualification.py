@@ -1,13 +1,13 @@
 from typing import List, Tuple
 
-from AbstractFunctions import *
-from EvaluationFunction import *
+from AbstractFunctions import average_td_idf_score, freq_dist
+from EvaluationFunction import get_n_val, get_top_n
 
 
 class KeywordQualification:
     def __init__(self, tokens: List[str], tf_idf_scores: List[float]):
         """
-        Initializes a KeywordQualification object.
+        To evaluate the keywords that qualify for further score calculation, follow these steps.
 
         Args:
         ----
@@ -54,8 +54,7 @@ class KeywordQualification:
 
     def show(self) -> Tuple[dict, float, List[Tuple[str, float]]]:
         """
-        Returns the frequency distribution, qualification threshold, and top terms.
-
+        Here are the steps to obtain the frequency distribution, qualification threshold, and top qualified terms.
         Returns
         -------
             A tuple containing the frequency distribution (dict), qualification threshold (float), and top terms (list of tuples).

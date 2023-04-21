@@ -3,17 +3,22 @@ import math
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
-nltk.download("stopwords")
-nltk.download("punkt")
-
-from AbstractFunctions import *
-from AhoCorasick import *
-from EvaluationFunction import *
+from AbstractFunctions import (
+    array_extend,
+    check_sent,
+    fallback_detection,
+    fallback_tfidf_evaluation,
+    strip_non_alpha_dash,
+)
+from EvaluationFunction import get_top_n
 from KeywordQualification import *
 from LevensteinDistance import *
 from stopwords import *
 from TextScoring import *
-from YouTubeTranscript import *
+from YouTubeTranscript import get_transcript
+
+nltk.download("stopwords")
+nltk.download("punkt")
 
 
 class TFIDFEvaluation:
