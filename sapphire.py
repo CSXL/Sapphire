@@ -3,9 +3,9 @@
 
 import nltk  # Used for performing standard NLP tasks like lexical analysis
 
-from KeywordQualification import KeywordQualification
-from TextScoring import InformationalRetrievalRank
-from TFIDFEvaluation import TFIDFEvaluation
+from RigorEvaluation.TextScoring import InformationalRetrievalRank
+from RigorEvaluation.TFIDFEvaluation import TFIDFEvaluation
+from TokenSatisfaction.KeywordQualification import KeywordQualification
 
 nltk.download("punkt")
 
@@ -46,4 +46,4 @@ def Sapphire(videoID: str) -> float:
     return float(rank_score)
 
 
-print(Sapphire("MsnQ5uepIaE"))
+print(Sapphire("ix5jPkxsr7M"))

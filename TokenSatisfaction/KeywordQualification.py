@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
-from AbstractFunctions import average_td_idf_score, freq_dist
-from EvaluationFunction import get_n_val, get_top_n
+from TokenSatisfaction.AbstractFunctions import average_td_idf_score, freq_dist
+from TokenSatisfaction.EvaluationFunction import get_n_val, get_top_n
 
 
 class KeywordQualification:
@@ -21,7 +21,7 @@ class KeywordQualification:
 
     def get_qualification(self, tf_idf_scores: List[float]) -> float:
         """
-        Returns the qualification threshold based on the average term-document IDF score.
+        Follow the given procedure to return the qualification threshold based on the average term-document IDF score.
 
         Args:
         ----

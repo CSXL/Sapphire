@@ -1,7 +1,7 @@
 from operator import itemgetter
 from typing import Dict
 
-from AhoCorasick import get_closest_score_from_tfidf_dict
+from TokenSatisfaction.AhoCorasick import get_closest_score_from_tfidf_dict
 
 
 def text_scoring(

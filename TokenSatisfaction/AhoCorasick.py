@@ -1,13 +1,13 @@
 from typing import Dict
 
-from LevensteinDistance import *
+from TokenSatisfaction.LevensteinDistance import levenshtein_distance
 
 
 def get_closest_score_from_tfidf_dict(
     key_from_tfidf: str, freq_dist_dict: Dict[str, float]
 ) -> str:
     """
-    Returns the closest key to key_from_tfidf in freq_dist_dict, based on the Levenshtein distance.
+    Follow the steps to return the closest key to key_from_tfidf in freq_dist_dict, based on the Levenshtein distance.
 
     Args:
     ----

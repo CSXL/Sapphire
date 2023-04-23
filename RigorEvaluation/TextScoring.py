@@ -1,9 +1,9 @@
-from EvaluationFunction import *
+from TokenSatisfaction.EvaluationFunction import text_scoring
 
 
 def InformationalRetrievalRank(qualified_terms, freq_dist, qualification):
     """
-    Computes a score for a document based on its frequency distribution and the frequency of qualified terms.
+    Follow the steps to compute a score for a document based on its frequency distribution and the frequency of qualified terms.
 
     Args:
     ----

@@ -3,19 +3,24 @@ import math
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
-from AbstractFunctions import (
+from RigorEvaluation.stopwords import (
+    custom_stopwords,
+    nouns,
+    numbers_str,
+    pronouns,
+    stop_words,
+    sw,
+    sw_spacy,
+)
+from TokenSatisfaction.AbstractFunctions import (
     array_extend,
     check_sent,
     fallback_detection,
     fallback_tfidf_evaluation,
     strip_non_alpha_dash,
 )
-from EvaluationFunction import get_top_n
-from KeywordQualification import *
-from LevensteinDistance import *
-from stopwords import *
-from TextScoring import *
-from YouTubeTranscript import get_transcript
+from TokenSatisfaction.EvaluationFunction import get_top_n
+from transcription.YouTubeTranscript import get_transcript
 
 nltk.download("stopwords")
 nltk.download("punkt")

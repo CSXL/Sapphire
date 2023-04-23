@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 def array_extend(arr1, arr2):
     """
-    Extends the first array with the elements of the second array.
+    Follow the steps to extend the first array with the elements of the second array.
 
     Args:
     ----
@@ -90,7 +90,7 @@ def check_sent(word, sentences):
 
 def strip_non_alpha_dash(text):
     """
-    This function takes in a string and strips it off any character that is not a letter or a "-".
+    Use the method to strip it off any character that is not a letter or a "-".
     """
 
     return "".join(c for c in text if c.isalpha() or c == "-")
