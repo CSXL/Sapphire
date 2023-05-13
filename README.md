@@ -1,6 +1,6 @@
 # Sapphire
 
-![Project Logo](/path/to/logo.png)
+![Project Logo](IMG-9758.jpg)
 
 A brief description of what this project does and who it's for
 
