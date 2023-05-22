@@ -1,7 +1,7 @@
 # Makefile for Sapphire
 configure:
 	@echo "Configuring Environment..."
-	@export PYTHONPATH=$(pwd)
+	@export PYTHONPATH=$PYTHONPATH:$(pwd)
 	@echo "Done configuring environment."
 
 lint:

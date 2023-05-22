@@ -67,7 +67,7 @@ def modify_transcript(
 def get_youtube_video_duration(video_id: str, api_key: str) -> float:
     """
     Follow as given to return the duration of a YouTube video given its video ID using the YouTube Data API.
-
+    Request format: https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=[VIDEO_ID]M&key=[YOUR_API_KEY]
     Args:
     ----
         video_id (str): The ID of the YouTube video.
@@ -79,7 +79,6 @@ def get_youtube_video_duration(video_id: str, api_key: str) -> float:
     """
 
     youtube = build("youtube", "v3", developerKey=api_key)
-
     try:
         video_response = (
             youtube.videos().list(part="contentDetails", id=video_id).execute()
