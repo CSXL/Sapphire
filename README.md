@@ -2,7 +2,6 @@
 
 ![Project Logo](IMG-9758.jpg)
 
-A brief description of what this project does and who it's for
 
 
 ## Table of Contents
@@ -27,9 +26,7 @@ A brief description of what this project does and who it's for
 To score YouTube videos based on information rigor.
 
 
-## Resources
 
-needs content.
 
 
 ## Overview
