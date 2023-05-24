@@ -44,3 +44,4 @@ def Sapphire(videoID: str) -> float:
     rank_score = InformationalRetrievalRank(qualified_terms, freq_dist, qualification)
 
     return float(rank_score)
+print(Sapphire("bqu6BquVi2M"))

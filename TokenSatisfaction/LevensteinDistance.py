@@ -1,5 +1,4 @@
-import leven
-
+import Levenshtein
 
 def levenshtein_distance(str1: str, str2: str) -> int:
     """
@@ -12,4 +11,4 @@ def levenshtein_distance(str1: str, str2: str) -> int:
     Returns:
         int: The Levenshtein distance between the two strings.
     """
-    return leven.distance(str1, str2)
+    return Levenshtein.distance(str1, str2)
