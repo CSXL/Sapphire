@@ -1,6 +1,6 @@
 # Sapphire
 
-![Project Logo](IMG-9758.jpg){ width=50% height=50% }
+![Project Logo](IMG-9758.jpg){ width=50px height=50px }
 
 
 
