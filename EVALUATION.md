@@ -1,0 +1,64 @@
+# Standards Rubric
+
+- [ ] Documentation
+  - [ ] README.md
+    - [ ] Name
+    - [ ] Brief Description
+    - [ ] User Setup Instructions (if applicable)
+    - [ ] Overview of the project
+      - [ ] Mission & Vision
+      - [ ] Problem & Solution
+      - [ ] Functionality
+      - [ ] Purpose
+      - [ ] Current State or Future Directions
+    - [ ] Links to any relevant documentation
+    - [ ] Contact information for the project's maintainer(s)
+  - [ ] REQUIREMENTS.md
+    - [ ] Mission & Vision
+    - [ ] Functional Requirements
+    - [ ] Non-Functional Requirements
+    - [ ] Technical Requirements
+    - [ ] Security Requirements
+  - [ ] CONTRIBUTING.md
+    - [ ] Developer Setup Instructions
+    - [ ] Contributing Instructions
+    - [ ] Project Structure
+    - [ ] Project-Specific Standards and Practices
+      - [ ] Code-Style
+      - [ ] Documentation
+      - [ ] Code-Review Process
+      - [ ] Project Management
+    - [ ] Contact information for the project's maintainer(s)
+    - [ ] Link to the code of conduct
+  - [ ] Code of Conduct
+- [ ] Code Standards
+  - [ ] Testing
+    - [ ] Unified test suite
+    - [ ] HTTP Endpoints are mocked and tested
+    - [ ] User-facing interfaces are tested
+  - [ ] Static Analysis Tools
+    - [ ] Linters
+    - [ ] Formatters
+  - [ ] Inline documentation for all user-facing interfaces
+  - [ ] Idiomatic practices of the language are followed
+    - [ ] Opinionated style guide or philosophy is followed
+    - [ ] Appropriately used design patterns and language features
+  - [ ] Version control system is used
+  - [ ] CI/CD pipeline
+    - [ ] Static Analysis
+    - [ ] Unit Testing
+    - [ ] Release (when applicable)
+  - [ ] Release system
+    - [ ] Single command
+    - [ ] Linked to an action such as a push to a branch or a pull request
+    - [ ] Semantic versioning
+  - [ ] Environments
+    - [ ] Seperation of development and production environments
+    - [ ] Secure storage of credentials and data
+  - [ ] Security
+    - [ ] No exposed or hard-coded credentials
+    - [ ] No severley outdated dependencies
+
+## Static Analysis Output
+
+Place the output of your static analysis tools here.
