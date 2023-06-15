@@ -1,5 +1,4 @@
 # Sapphire
-[![Made by CSX Labs](https://csxlabs.org/badges/made_by_csx_labs.svg)](https://csxlabs.org)
 
 ![Project Logo](IMG-9758.jpg)
 
