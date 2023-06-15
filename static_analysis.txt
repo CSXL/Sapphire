@@ -1,0 +1,301 @@
+[0G[2K[0G[2K[0G[2K[0G[1m[30m[107m  AUTOFIXES  [0m
+
+[1m[4m.github/workflows/pylint.yml
+[0m[1m[90m 1:1[0m[31m  high[0m  Incorrect formatting[1m[90m  
+[0m
+[90m  10 | [0m        python-version: ["3.8", "3.9", "3.10"]
+[90m  11 | [0m    steps:
+[90m  12 | [0m[31m    - uses: actions/checkout@v3
+[0m[90m  13 | [0m[31m    - name: Set up Python ${{ matrix.python-version }}
+[0m[90m  14 | [0m[31m      uses: actions/setup-python@v3
+[0m[90m  15 | [0m[31m      with:
+[0m[90m  16 | [0m[31m        python-version: ${{ matrix.python-version }}
+[0m[90m  17 | [0m[31m    - name: Install dependencies
+[0m[90m  18 | [0m[31m      run: |
+[0m[90m  19 | [0m[31m        python -m pip install --upgrade pip
+[0m[90m  20 | [0m[31m        pip install pylint
+[0m[90m  21 | [0m[31m    - name: Analysing the code with pylint
+[0m[90m  22 | [0m[31m      run: |
+[0m[90m  23 | [0m[31m        pylint $(git ls-files '*.py')
+[0m[90m     | [0m[32m      - uses: actions/checkout@v3
+[0m[90m     | [0m[32m      - name: Set up Python ${{ matrix.python-version }}
+[0m[90m     | [0m[32m        uses: actions/setup-python@v3
+[0m[90m     | [0m[32m        with:
+[0m[90m     | [0m[32m          python-version: ${{ matrix.python-version }}
+[0m[90m     | [0m[32m      - name: Install dependencies
+[0m[90m     | [0m[32m        run: |
+[0m[90m     | [0m[32m          python -m pip install --upgrade pip
+[0m[90m     | [0m[32m          pip install pylint
+[0m[90m     | [0m[32m      - name: Analysing the code with pylint
+[0m[90m     | [0m[32m        run: |
+[0m[90m     | [0m[32m          pylint $(git ls-files '*.py')
+[0m
+[1m[4mREADME.md
+[0m[1m[90m 1:1[0m[31m  high[0m  Incorrect formatting[1m[90m  
+[0m
+[90m  3 | [0m![Project Logo](IMG-9758.jpg)
+[90m  4 | [0m
+[90m  5 | [0m[31m
+[0m[90m  6 | [0m[31m
+[0m[90m  7 | [0m## Table of Contents
+[90m  8 | [0m
+
+[90m  18 | [0m    - 3.[TF-IDF evaluators](#TF-IDF-evaluators)
+[90m  19 | [0m    - 4.[Keyword Qualifiers](#Keyword-Qualifiers)
+[90m  20 | [0m[31m   - [Current Status](#Current-Status)
+[0m[90m  21 | [0m[31m
+[0m[90m  22 | [0m[31m
+[0m[90m     | [0m[32m  - [Current Status](#Current-Status)
+[0m[90m  23 | [0m
+[90m  24 | [0m## Mission
+
+[90m  26 | [0mTo score YouTube videos based on information rigor.
+[90m  27 | [0m
+[90m  28 | [0m[31m
+[0m[90m  29 | [0m[31m
+[0m[90m  30 | [0m[31m
+[0m[90m  31 | [0m[31m
+[0m[90m  32 | [0m## Overview
+[90m  33 | [0m
+[90m  34 | [0m[31mSapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of importa... [317 characters hidden][0m[31m
+[0m[90m  35 | [0m[31m
+[0m[90m     | [0m[32mSapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of importa... [316 characters hidden][0m[32m
+[0m[90m  36 | [0m
+[90m  37 | [0m## Why?
+
+[90m  40 | [0m
+[90m  41 | [0m## Requirements
+[90m     | [0m[32m
+[0m[90m  42 | [0mVision: An algorithm that scores YouTube videos based on information rigor
+[90m  43 | [0m
+[90m  44 | [0m[31m ### Youtube transcription ###
+[0m[90m  45 | [0m[31mSapphire needs to retrieve the content of a YouTube video. Once the raw transcript of the YouTube video is obtained using wrappers, it is sent to be pre-processed to eliminate unne... [65 characters hidden][0m[31m
+[0m[90m     | [0m[32m### Youtube transcription
+[0m[90m     | [0m[32m
+[0m[90m     | [0m[32mSapphire needs to retrieve the content of a YouTube video. Once the raw transcript of the YouTube video is obtained using wrappers, it is sent to be pre-processed to eliminate unne... [64 characters hidden][0m[32m
+[0m[90m     | [0m[32m
+[0m[90m     | [0m[32m### Text pre-processing
+[0m[90m  46 | [0m
+[90m  47 | [0m[31m### Text pre-processing ###
+[0m[90m  48 | [0mIn order to produce an accurate score for the YouTube video, the text has to be preprocessed/polished.This involves text cleaning, removal of special characters, and converting the... [458 characters hidden]
+[90m  49 | [0m
+[90m  50 | [0m[31m### TF-IDF evaluators ###
+[0m[90m     | [0m[32m### TF-IDF evaluators
+[0m[90m     | [0m[32m
+[0m[90m  51 | [0mTF-IDF (Term Frequency-Inverse Document Frequency) evaluation is a crucial part of the algorithm as it is being used for scoring YouTube videos based on their content. It involves ... [1295 characters hidden]
+[90m  52 | [0m
+[90m  53 | [0m[31m### Score Assessment ###
+[0m[90m     | [0m[32m### Score Assessment
+[0m[90m     | [0m[32m
+[0m[90m  54 | [0mIn the evaluation process, the second most crucial step is the implementation of an assessor. This assessor is responsible for filtering out words based on their TF-IDF score, the ... [1557 characters hidden]
+[90m  55 | [0m[31m 
+[0m[90m     | [0m[32m
+[0m[90m  56 | [0m## Current Status
+[90m     | [0m[32m
+[0m[90m  57 | [0mThe current status of the package is that it is undergoing MVP (Minimum Viable Product) development. The evaluations are currently being optimized to enhance performance. Notably, ... [110 characters hidden]
+
+[1m[4mRigorEvaluation/test_text_scoring.py
+[0m[1m[90m 1:1[0m[31m  high[0m  Incorrect formatting[1m[90m  
+[0m
+[90m  1 | [0mimport unittest
+[90m  2 | [0mfrom RigorEvaluation.TextScoring import InformationalRetrievalRank
+[90m    | [0m[32m
+[0m[90m    | [0m[32m
+[0m[90m  3 | [0mclass test_text_scoring(unittest.TestCase):
+[90m  4 | [0m    def test_informational_retrieval_rank(self):
+
+[90m   8 | [0m        threshold_n = 2
+[90m   9 | [0m        expected_result = 0.24  # Calculate the expected result based on the formula
+[90m  10 | [0m[31m        self.assertEqual(InformationalRetrievalRank(ranked_keywords, freq_dist, threshold_n), expected_result)
+[0m[90m     | [0m[32m        self.assertEqual(
+[0m[90m     | [0m[32m            InformationalRetrievalRank(ranked_keywords, freq_dist, threshold_n),
+[0m[90m     | [0m[32m            expected_result,
+[0m[90m     | [0m[32m        )
+[0m[90m     | [0m[32m
+[0m[90m     | [0m[32m
+[0m[90m  11 | [0mif __name__ == "__main__":
+[90m  12 | [0m[31m  unittest.main()
+[0m[90m     | [0m[32m    unittest.main()
+[0m
+[1m[4mRigorEvaluation/test_tfidf_evaluation.py
+[0m[1m[90m 1:1[0m[31m  high[0m  Incorrect formatting[1m[90m  
+[0m
+[90m  2 | [0mfrom RigorEvaluation.TFIDFEvaluation import TFIDFEvaluation
+[90m  3 | [0m
+[90m    | [0m[32m
+[0m[90m  4 | [0mclass test_tfidf_evaluation(unittest.TestCase):
+[90m  5 | [0m    def setUp(self):
+
+[90m   9 | [0m    def test_lower_case_conversion(self):
+[90m  10 | [0m        self.evaluation.lower_case_conversion()
+[90m  11 | [0m[31m        expected_sentences = ["let's talk about data science and some of the other related terms you may have heard such as predictive analytics machine learning advanced analytics... [5540 characters hidden][0m[31m
+[0m[90m     | [0m[32m        expected_sentences = [
+[0m[90m     | [0m[32m            "let's talk about data science and some of the other related terms you may have heard such as predictive analytics machine learning advanced analytics and others so let... [5521 characters hidden][0m[32m
+[0m[90m     | [0m[32m        ]
+[0m[90m  12 | [0m        self.assertEqual(self.evaluation.total_sentences, expected_sentences)
+[90m  13 | [0m
+[90m  14 | [0m    def test_evaluate_term_freq(self):
+[90m  15 | [0m        self.evaluation.evaluate_term_freq()
+[90m  16 | [0m[31m        expected_tf_score = {'data': 31, 'related': 1, 'terms': 1, 'heard': 1, 'predictive': 3, 'analytics': 7, 'machine': 4, 'learning': 4, 'advanced': 4, 'start': 6, 'textbook': ... [2214 characters hidden][0m[31m
+[0m[90m     | [0m[32m        expected_tf_score = {
+[0m[90m     | [0m[32m            "data": 31,
+[0m[90m     | [0m[32m            "related": 1,
+[0m[90m     | [0m[32m            "terms": 1,
+[0m[90m     | [0m[32m            "heard": 1,
+[0m[90m     | [0m[32m            "predictive": 3,
+[0m[90m     | [0m[32m            "analytics": 7,
+[0m[90m     | [0m[32m            "machine": 4,
+[0m[90m     | [0m[32m            "learning": 4,
+[0m[90m     | [0m[32m            "advanced": 4,
+[0m[90m     | [0m[32m            "start": 6,
+[0m[90m     | [0m[32m            "textbook": 1,
+[0m[90m     | [0m[32m            "definition": 1,
+[0m[90m     | [0m[32m            "field": 1,
+[0m[90m     | [0m[32m            "study": 1,
+[0m[90m     | [0m[32m            "involves": 4,
+[0m[90m     | [0m[32m            "extracting": 1,
+[0m[90m     | [0m[32m            "knowledge": 2,
+[0m[90m     | [0m[32m            "insights": 5,
+[0m[90m     | [0m[32m            "noisy": 2,
+[0m[90m     | [0m[32m            "turning": 1,
+[0m[90m     | [0m[32m            "actions": 2,
+[0m[90m     | [0m[32m            "business": 11,
+[0m[90m     | [0m[32m            "organization": 3,
+[0m[90m     | [0m[32m            "dig": 1,
+[0m[90m     | [0m[32m            "little": 1,
+[0m[90m     | [0m[32m            "bit": 1,
+[0m[90m     | [0m[32m            "discuss": 1,
+[0m[90m     | [0m[32m            "different": 8,
+[0m[90m     | [0m[32m            "areas": 2,
+[0m[90m     | [0m[32m            "covered": 1,
+[0m[90m     | [0m[32m            "intersection": 2,
+[0m[90m     | [0m[32m            "disciplines": 2,
+[0m[90m     | [0m[32m            "cover": 1,
+[0m[90m     | ...508 additional lines hidden...
+[0m
+[1m[4mTokenSatisfaction/LevensteinDistance.py
+[0m[1m[90m 1:1[0m[31m  high[0m  Incorrect formatting[1m[90m  
+[0m
+[90m  1 | [0mimport Levenshtein
+[90m  2 | [0m
+[90m    | [0m[32m
+[0m[90m  3 | [0mdef levenshtein_distance(str1: str, str2: str) -> int:
+[90m  4 | [0m    """
+
+[1m[90m...Hiding additional autofix details (use --diff=full to print all autofixes)...
+
+[0m
+[1m[30m[107m  ISSUES  [0m
+
+[1m[4m.github/workflows/pylint.yml[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mprettier[22m[39m[49m
+
+[1m[4mREADME.md[0m[4m[90m:9:0[0m
+ [1m[90m[49m -:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mprettier[22m[39m[49m          
+ [1m[90m[49m 9:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m11:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m12:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m13:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m14:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m15:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m16:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m17:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m18:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m19:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m20:0[22m[39m[49m  [33m[49mlow[39m[49m  Link fragments should be valid                           [1m[90m[49mmarkdownlint/MD051[22m[39m[49m
+ [1m[90m[49m44:0[22m[39m[49m  [33m[49mlow[39m[49m  Heading style                                            [1m[90m[49mmarkdownlint/MD003[22m[39m[49m
+ [1m[90m[49m47:0[22m[39m[49m  [33m[49mlow[39m[49m  Heading style                                            [1m[90m[49mmarkdownlint/MD003[22m[39m[49m
+ [1m[90m[49m50:0[22m[39m[49m  [33m[49mlow[39m[49m  Heading style                                            [1m[90m[49mmarkdownlint/MD003[22m[39m[49m
+ [1m[90m[49m53:0[22m[39m[49m  [33m[49mlow[39m[49m  Heading style                                            [1m[90m[49mmarkdownlint/MD003[22m[39m[49m
+
+[1m[4mRigorEvaluation/TextScoring.py[0m[4m[90m:4:5[0m
+ [1m[90m[49m4:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `freq_dist`, `qualification`, `qualified_terms`  [1m[90m[49mruff/D417[22m[39m[49m
+
+[1m[4mRigorEvaluation/test_text_scoring.py[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mblack[22m[39m[49m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49misort[22m[39m[49m
+
+[1m[4mRigorEvaluation/test_tfidf_evaluation.py[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49misort[22m[39m[49m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mblack[22m[39m[49m
+
+[1m[4mTokenSatisfaction/AhoCorasick.py[0m[4m[90m:6:5[0m
+ [1m[90m[49m6:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `freq_dist_dict`, `key_from_tfidf`  [1m[90m[49mruff/D417[22m[39m[49m
+
+[1m[4mTokenSatisfaction/EvaluationFunction.py[0m[4m[90m:7:5[0m
+ [1m[90m[49m 7:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `freq_dist`, `ranked_keywords`, `threshold_n`  [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m39:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `average_td_idf_score`, `score_json`           [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m60:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `dict_elem`, `n`                               [1m[90m[49mruff/D417[22m[39m[49m
+
+[1m[4mTokenSatisfaction/KeywordQualification.py[0m[4m[90m:8:9[0m
+ [1m[90m[49m 8:9[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `tf_idf_scores`, `tokens`                         [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m22:9[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument description in the docstring: `tf_idf_scores`                                    [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m38:9[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument description in the docstring: `tf_idf_scores`                                    [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m41:9[22m[39m[49m  [31m[49mhigh[39m[49m  First line of docstring should be in imperative mood: "Returns the top terms based on their       [1m[90m[49mruff/D401[22m[39m[49m
+             term-document IDF score."                                                                                  
+ [1m[90m[49m56:9[22m[39m[49m  [31m[49mhigh[39m[49m  Missing blank line before section ("Returns")                                                     [1m[90m[49mruff/D411[22m[39m[49m
+ [1m[90m[49m56:9[22m[39m[49m  [31m[49mhigh[39m[49m  First line of docstring should be in imperative mood: "Here are the steps to obtain the           [1m[90m[49mruff/D401[22m[39m[49m
+             frequency distribution, qualification threshold, and top qualified terms."                                 
+
+[1m[4mTokenSatisfaction/LevensteinDistance.py[0m[4m[90m:4:5[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                                            [1m[90m[49misort[22m[39m[49m    
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                                            [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m4:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing dashed underline after section ("Args")                                                    [1m[90m[49mruff/D407[22m[39m[49m
+ [1m[90m[49m4:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing dashed underline after section ("Returns")                                                 [1m[90m[49mruff/D407[22m[39m[49m
+ [1m[90m[49m4:5[22m[39m[49m  [31m[49mhigh[39m[49m  First line of docstring should be in imperative mood: "Calculates the Levenshtein distance         [1m[90m[49mruff/D401[22m[39m[49m
+            between two input strings."                                                                                 
+
+[1m[4mTokenSatisfaction/test_abstract_functions.py[0m[4m[90m:2:30[0m
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                [1m[90m[49misort[22m[39m[49m    
+ [1m[90m[49m2:30[22m[39m[49m  [31m[49mhigh[39m[49m  `nltk.probability.FreqDist` imported but unused                        [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m3:27[22m[39m[49m  [31m[49mhigh[39m[49m  `nltk.tokenize.sent_tokenize` imported but unused                      [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m4:45[22m[39m[49m  [31m[49mhigh[39m[49m  `sklearn.feature_extraction.text.TfidfVectorizer` imported but unused  [1m[90m[49mruff/F401[22m[39m[49m
+
+[1m[4mTokenSatisfaction/test_aho_corasick.py[0m[4m[90m:3:20[0m
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                          [1m[90m[49misort[22m[39m[49m    
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                          [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m3:20[22m[39m[49m  [31m[49mhigh[39m[49m  `typing.Dict` imported but unused                                                [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m4:50[22m[39m[49m  [31m[49mhigh[39m[49m  `TokenSatisfaction.LevensteinDistance.levenshtein_distance` imported but unused  [1m[90m[49mruff/F401[22m[39m[49m
+
+[1m[4mTokenSatisfaction/test_evaluation_function.py[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mblack[22m[39m[49m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49misort[22m[39m[49m
+
+[1m[4mTokenSatisfaction/test_keyword_qualification.py[0m[4m[90m:2:20[0m
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49misort[22m[39m[49m    
+ [1m[90m[49m2:20[22m[39m[49m  [31m[49mhigh[39m[49m  `typing.List` imported but unused                        [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m2:26[22m[39m[49m  [31m[49mhigh[39m[49m  `typing.Tuple` imported but unused                       [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m3:25[22m[39m[49m  [31m[49mhigh[39m[49m  `collections.Counter` imported but unused                [1m[90m[49mruff/F401[22m[39m[49m
+
+[1m[4mTokenSatisfaction/test_levenshtein_distance.py[0m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49mblack[22m[39m[49m
+ [1m[90m[49m-:-[22m[39m[49m  [31m[49mfmt[39m[49m  Incorrect formatting, autoformat by running 'trunk fmt'  [1m[90m[49misort[22m[39m[49m
+
+[1m[4msapphire.py[0m[4m[90m:13:5[0m
+ [1m[90m[49m -:-[22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'   [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m13:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument description in the docstring: `videoID`  [1m[90m[49mruff/D417[22m[39m[49m
+
+[1m[4mtest_sapphire.py[0m[4m[90m:2:41[0m
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                            [1m[90m[49misort[22m[39m[49m    
+ [1m[90m[49m-:- [22m[39m[49m  [31m[49mfmt[39m[49m   Incorrect formatting, autoformat by running 'trunk fmt'                            [1m[90m[49mblack[22m[39m[49m    
+ [1m[90m[49m2:41[22m[39m[49m  [31m[49mhigh[39m[49m  `RigorEvaluation.TextScoring.InformationalRetrievalRank` imported but unused       [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m3:45[22m[39m[49m  [31m[49mhigh[39m[49m  `RigorEvaluation.TFIDFEvaluation.TFIDFEvaluation` imported but unused              [1m[90m[49mruff/F401[22m[39m[49m
+ [1m[90m[49m4:52[22m[39m[49m  [31m[49mhigh[39m[49m  `TokenSatisfaction.KeywordQualification.KeywordQualification` imported but unused  [1m[90m[49mruff/F401[22m[39m[49m
+
+[1m[4mtranscription/StringConversion.py[0m[4m[90m:5:5[0m
+ [1m[90m[49m 5:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument description in the docstring: `json_list`  [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m25:5[22m[39m[49m  [31m[49mhigh[39m[49m  Local variable `scores` is assigned to but never used       [1m[90m[49mruff/F841[22m[39m[49m
+
+[1m[4mtranscription/YouTubeTranscript.py[0m[4m[90m:21:5[0m
+ [1m[90m[49m21:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument description in the docstring: `video_id`                                         [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m22:5[22m[39m[49m  [31m[49mhigh[39m[49m  First line of docstring should be in imperative mood: "Here are the steps to retrieve the         [1m[90m[49mruff/D401[22m[39m[49m
+             transcript of a YouTube video."                                                                            
+ [1m[90m[49m39:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `limit1`, `limit2`, `string_format`, `video_id`   [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m67:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing argument descriptions in the docstring: `api_key`, `video_id`                             [1m[90m[49mruff/D417[22m[39m[49m
+ [1m[90m[49m68:5[22m[39m[49m  [31m[49mhigh[39m[49m  Missing blank line before section ("Args")                                                        [1m[90m[49mruff/D411[22m[39m[49m
+
+Checked 47 files
+[1m[91m✖ 69 issues (21 auto-fixable)
+[0m

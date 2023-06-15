@@ -1,0 +1,234 @@
+[nltk_data] Downloading package stopwords to /home/adamb/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /home/adamb/nltk_data...
+[nltk_data]   Package vader_lexicon is already up-to-date!
+[nltk_data] Downloading package stopwords to /home/adamb/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /home/adamb/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt to /home/adamb/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+./home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 46554), raddr=('142.250.191.78', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 43950), raddr=('142.250.72.206', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 48500), raddr=('142.250.189.234', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 49038), raddr=('142.251.32.42', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 48848), raddr=('172.217.164.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 34790), raddr=('172.217.12.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 34802), raddr=('172.217.12.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 47516), raddr=('142.251.46.234', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 43964), raddr=('142.250.72.206', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 53870), raddr=('142.251.214.142', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/usr/lib/python3.8/re.py:294: ResourceWarning: unclosed <ssl.SSLSocket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 48864), raddr=('172.217.164.106', 443)>
+  return _cache[type(pattern), pattern, flags]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/re.py:294: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 34812), raddr=('172.217.12.106', 443)>
+  return _cache[type(pattern), pattern, flags]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/re.py:294: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 58794), raddr=('142.250.189.234', 443)>
+  return _cache[type(pattern), pattern, flags]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/re.py:294: ResourceWarning: unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 37820), raddr=('142.251.46.234', 443)>
+  return _cache[type(pattern), pattern, flags]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 57522), raddr=('142.251.46.206', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 34796), raddr=('142.250.72.206', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 58358), raddr=('142.251.214.142', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 37582), raddr=('172.217.164.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 58804), raddr=('142.250.189.234', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 37584), raddr=('172.217.164.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.8/json/decoder.py:353: ResourceWarning: unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 48142), raddr=('172.217.12.106', 443)>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E...../home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/numpy/core/numerictypes.py:319: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 50368), raddr=('142.250.191.42', 443)>
+  return issubclass(arg1, arg2)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/numpy/core/numerictypes.py:319: ResourceWarning: unclosed <ssl.SSLSocket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 37592), raddr=('172.217.164.106', 443)>
+  return issubclass(arg1, arg2)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......./home/adamb/lab/Sapphire/venv/lib/python3.8/site-packages/youtube_transcript_api/_api.py:137: ResourceWarning: unclosed <ssl.SSLSocket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.29.107.85', 57524), raddr=('142.251.46.206', 443)>
+  return cls.list_transcripts(video_id, proxies, cookies).find_transcript(languages).fetch(preserve_formatting=preserve_formatting)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+E.E.
+======================================================================
+ERROR: test_evaluate_inverse_doc_freq (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_evaluate_term_freq (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_fallback_evaluation (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_filter_words (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_initialize_json_scores (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_lower_case_conversion (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_strip_non_ascii (RigorEvaluation.test_tfidf_evaluation.test_tfidf_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/test_tfidf_evaluation.py", line 7, in setUp
+    self.evaluation = TFIDFEvaluation(self.videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_keyword_qualification (TokenSatisfaction.test_keyword_qualification.test_keyword_qualification)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/adamb/lab/Sapphire/TokenSatisfaction/test_keyword_qualification.py", line 9, in test_keyword_qualification
+    ir_evaluator = TFIDFEvaluation("RBSUwFGa6Fk")
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+======================================================================
+ERROR: test_sapphire (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_sapphire
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.8/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/adamb/lab/Sapphire/test_sapphire.py", line 6, in <module>
+    from sapphire import Sapphire
+  File "/home/adamb/lab/Sapphire/sapphire.py", line 47, in <module>
+    print(Sapphire("bqu6BquVi2M"))
+  File "/home/adamb/lab/Sapphire/sapphire.py", line 28, in Sapphire
+    ir_evaluator = TFIDFEvaluation(videoID)
+  File "/home/adamb/lab/Sapphire/RigorEvaluation/TFIDFEvaluation.py", line 31, in __init__
+    self.text = get_transcript(videoID)  # Fetch the transcript of the video
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 35, in get_transcript
+    transcript = modify_transcript(200, 2000, video_id, string_format)
+  File "/home/adamb/lab/Sapphire/transcription/YouTubeTranscript.py", line 56, in modify_transcript
+    if get_youtube_video_duration(video_id, os.getenv("api_key")) >= float(
+TypeError: '>=' not supported between instances of 'NoneType' and 'float'
+
+
+----------------------------------------------------------------------
+Ran 24 tests in 13.085s
+
+FAILED (errors=9)
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=bqu6BquVi2M&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+None
+An error occurred: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails&id=RBSUwFGa6Fk&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
