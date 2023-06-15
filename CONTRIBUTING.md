@@ -37,15 +37,17 @@ For CSX Labs' core values please refer to our [Business Plan](https://docs.googl
 - **Efficiency:** 
 Sapphire harnesses the power of advanced algorithms, such as Aho-Corasick, TF-IDF evaluation (with additive smoothing), and transcript fragmentation, to optimize efficiency and accuracy. These algorithms are essential components of Sapphire's codebase, providing developers with powerful tools to enhance performance and generate reliable results.
 
-Aho-Corasick algorithms are utilized to efficiently perform string matching, enabling the determination of the significance of specific vocabulary within a given corpus, which, in the case of Sapphire, is the transcript. This facilitates the extraction of relevant information and contributes to the overall accuracy of the cumulative result.
+  Aho-Corasick algorithms are utilized to efficiently perform string matching, enabling the determination of the significance of specific vocabulary within a given corpus,   which, in the case of Sapphire, is the transcript. This facilitates the extraction of relevant information and contributes to the overall accuracy of the cumulative result.
 
-The incorporation of additive smoothing in TF-IDF evaluation is another crucial aspect of Sapphire. This technique allows for the calculation of weighted words in a transcript across a wide range of corpuses, accommodating various linguistic patterns and enhancing the model's adaptability to different data sources. By employing additive smoothing, Sapphire ensures consistent and robust results for developers working with diverse textual data.
+  The incorporation of additive smoothing in TF-IDF evaluation is another crucial aspect of Sapphire. This technique allows for the calculation of weighted words in a     
+  transcript across a wide range of corpuses, accommodating various linguistic patterns and enhancing the model's adaptability to different data sources. By employing 
+  additive smoothing, Sapphire ensures consistent and robust results for developers working with diverse textual data.
 
 Transcript fragmentation is an additional feature provided by Sapphire. It offers developers the capability to select a partial amount of sentence tokens based on the complexity of the sentences. The granularity of the corpus determines the level of detail and precision achievable through transcript fragmentation. This functionality enhances the flexibility of Sapphire, empowering developers to tailor the analysis to their specific requirements and optimize resource usage.
 
 By integrating these powerful algorithms, Sapphire streamlines time complexity, enabling efficient processing and delivering accurate cumulative results.
 
--**Learning convenience:**
+- **Learning convenience:**
 Sapphire provides researchers with a more comprehensive selection of resources, facilitating access to a diverse array of content from various platforms. However, it is important to note that while platforms like YouTube offer valuable information, they may not always meet the rigorous standards required in academic or professional settings.
 
 
