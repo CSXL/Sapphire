@@ -79,7 +79,7 @@ Linting is done with [trunk](https://trunk.io), there are common IDE plugins for
 
 ### Running the project
 
-Run `make run` to execute the project for a specific YouTube video by passing the [Video ID] into the [Sapphire](sapphire.py) function.
+Run `make run` to execute the project for a specific YouTube video by passing the Video ID into the [Sapphire](sapphire.py) function.
 
 ## Contributing
 
