@@ -43,9 +43,11 @@ Sapphire harnesses the power of advanced algorithms, such as Aho-Corasick, TF-ID
   transcript across a wide range of corpuses, accommodating various linguistic patterns and enhancing the model's adaptability to different data sources. By employing 
   additive smoothing, Sapphire ensures consistent and robust results for developers working with diverse textual data.
 
-Transcript fragmentation is an additional feature provided by Sapphire. It offers developers the capability to select a partial amount of sentence tokens based on the complexity of the sentences. The granularity of the corpus determines the level of detail and precision achievable through transcript fragmentation. This functionality enhances the flexibility of Sapphire, empowering developers to tailor the analysis to their specific requirements and optimize resource usage.
+  Transcript fragmentation is an additional feature provided by Sapphire. It offers developers the capability to select a partial amount of sentence tokens based on the 
+  complexity of the sentences. The granularity of the corpus determines the level of detail and precision achievable through transcript fragmentation. This functionality 
+  enhances the flexibility of Sapphire, empowering developers to tailor the analysis to their specific requirements and optimize resource usage.
 
-By integrating these powerful algorithms, Sapphire streamlines time complexity, enabling efficient processing and delivering accurate cumulative results.
+  By integrating these powerful algorithms, Sapphire streamlines time complexity, enabling efficient processing and delivering accurate cumulative results.
 
 - **Learning convenience:**
 Sapphire provides researchers with a more comprehensive selection of resources, facilitating access to a diverse array of content from various platforms. However, it is important to note that while platforms like YouTube offer valuable information, they may not always meet the rigorous standards required in academic or professional settings.
