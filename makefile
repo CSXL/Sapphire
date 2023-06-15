@@ -16,5 +16,10 @@ check:
 
 test:
 	@echo "Running tests..."
-	@python -m unittest discover -s tests
+	@python -m unittest discover 
 	@echo "Done running tests."
+run:
+	@echo "Starting project..."
+	@python -m spacy download en_core_web_sm
+	@python sapphire.py
+	@echo "Done running."
