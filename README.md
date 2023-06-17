@@ -32,7 +32,7 @@ Interested in contributing to or testing this project? Check out our [contributi
 
 ## Overview
 
-Sapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of important words in the transcript, Sapphire is able to determine the depth and Emphasis covered in a video, making it an effective evaluation system for YouTube videos. This unique tool aims to bridge the gap between text scoring and token analysis, offering a powerful solution for content creators and researchers alike. 
+* Sapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of important words in the transcript, Sapphire is able to determine the depth and Emphasis covered in a video, making it an effective evaluation system for YouTube videos. This unique tool aims to bridge the gap between text scoring and token analysis, offering a powerful solution for content creators and researchers alike. 
 
 
 ## Why?
