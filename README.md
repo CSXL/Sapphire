@@ -1,5 +1,7 @@
 # Sapphire
 
+**An NLP based YouTube scoring model**
+
 ![Project Logo](IMG-9758.jpg)
 
 
