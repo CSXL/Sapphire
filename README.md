@@ -14,7 +14,7 @@
   - [Why?](#Why?)
   - [Requirements](#Requirements)
     - 1.[YouTube transcription](#YouTube-transcription)
-    - 2.[Text pre-processing](#Text-pre-procesing)
+    - 2.[Text pre-processing](#Text pre-procesing)
     - 3.[TF-IDF evaluators](#TF-IDF-evaluators)
     - 4.[Keyword Qualifiers](#Keyword-Qualifiers)
    - [Current Status](#Current-Status)
