@@ -32,7 +32,7 @@ Interested in contributing to or testing this project? Check out our [contributi
 
 ## Overview
 
-* Sapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of important words in the transcript, Sapphire is able to determine the depth and Emphasis covered in a video, making it an effective evaluation system for YouTube videos. This unique tool aims to bridge the gap between text scoring and token analysis, offering a powerful solution for content creators and researchers alike. 
+ Sapphire is an innovative open source tool that leverages TF-IDF scoring and frequency distributions to score transcripts of a YouTube video. By analyzing the statistics of important words in the transcript, Sapphire is able to determine the depth and Emphasis covered in a video, making it an effective evaluation system for YouTube videos. This unique tool aims to bridge the gap between text scoring and token analysis, offering a powerful solution for content creators and researchers alike. 
 
 
 ## Why?
@@ -43,8 +43,10 @@ There are several commonly used algorithms and software packages that utilize Na
 Vision: An algorithm that scores YouTube videos based on information rigor
 
  ### Youtube transcription ###
-Sapphire needs to retrieve the content of a YouTube video. Once the raw transcript of the YouTube video is obtained using wrappers, it is sent to be pre-processed to eliminate unnecessary elements such as timestamps, speaker labels, and noise. 
-
+* Sapphire needs to retrieve the content of a YouTube video.
+* Raw transcript of the YouTube video is obtained using wrappers.
+* The obtained raw transcript is sent for pre-processing.
+* Pre-processing involves eliminating unnecessary elements such as timestamps, speaker labels, and noise from the transcript.
 ### Text pre-processing ###
 In order to produce an accurate score for the YouTube video, the text has to be preprocessed/polished.This involves text cleaning, removal of special characters, and converting the text to lowercase for consistency. Next, the pre-processed text is tokenized into individual words or phrases in preparation for TF-IDF (Term Frequency-Inverse Document Frequency) analysis.The video length is also checked in order to determine how much of the transcript should be used. Based on the optimal bounds given, the most important part of the video in terms of the transcript is used for further evaluation, which is through vocabulary weighting.
 
