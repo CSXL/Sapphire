@@ -1,5 +1,11 @@
 # Requirements
 
+## Vision and Mission
+
+Vision - An algorithm that scores YouTube videos based on information rigor
+
+Mission - To score YouTube videos based on information rigor.
+
 ## 1. Introduction
 
 The purpose of this document is to outline the requirements for Sapphire. It provides a comprehensive description of the project's objectives, functional and non-functional requirements, constraints, and any relevant assumptions.
