@@ -59,7 +59,7 @@ Sapphire provides researchers with a more comprehensive selection of resources, 
 
 Create a [Google Cloud Platform](https://cloud.google.com/) account and then create an [YouTube Transcript API](https://developers.google.com/youtube/v3/docs/captions) and set it as an environment variable named `api_key`.
 
-You can also set the environment variables in a `.env` file in the root of the project (see [.env.example](.env.example) for an example .env configuration). The `.env` file is ignored by git, so you can safely store your API key in it.
+You can also set the environment variables in a `.env` file in the root of the project. The `.env` file is ignored by git, so you can safely store your API key in it.
 
 We are not responsible for any charges incurred by your Google Cloud accounts.
 
