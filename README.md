@@ -31,6 +31,8 @@ To score YouTube videos based on information rigor.
 ## Resources
 Interested in contributing to or testing this project? Check out our [contributing guide](CONTRIBUTING.md).
 
+For a more in-depth breakdown of the requirements, see our [requirements](REQUIREMENTS.md).
+
 
 ## Overview
 
