@@ -1,6 +1,6 @@
 # Sapphire
 
-**An `NLP` based YouTube scoring model**
+**An `NLP` based YouTube video scoring model**
 
 ![Project Logo](IMG-9758.jpg)
 
