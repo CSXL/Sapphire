@@ -80,9 +80,8 @@ def get_youtube_video_duration(video_id: str, api_key: str) -> float:
 
     youtube = build("youtube", "v3", developerKey=api_key)
     try:
-        video_response = (
-            youtube.videos().list(part="contentDetails", id=video_id).execute()
-        )
+        req = youtube.videos().list(part="contentDetails", id=video_id)
+        video_response = req.execute()
 
         duration = parse_duration(
             video_response["items"][0]["contentDetails"]["duration"]
