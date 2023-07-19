@@ -2,7 +2,7 @@
 
 [![Made by CSX Labs](https://csxlabs.org/badges/made_by_csx_labs.svg)](https://csxlabs.org)
 [![License - MIT](https://img.shields.io/github/license/CSXL/solus?style=for-the-badge)](LICENSE)
-[![Stage - Beta](https://img.shields.io/badge/stage-developing%20MVP-yellowgreen?style=for-the-badge)](#current-status)
+[![Stage - Beta](https://img.shields.io/badge/stage-beta-yellowgreen?style=for-the-badge)](#current-status)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/CSXL/Sapphire/pylint.yml?logo=github&style=for-the-badge)](https://github.com/CSXL/Sapphire/actions/workflows/pylint.yml)
 
 **An `NLP` based YouTube video scoring model**
