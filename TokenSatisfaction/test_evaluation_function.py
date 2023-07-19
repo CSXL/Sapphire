@@ -1,5 +1,8 @@
 import unittest
-from TokenSatisfaction.EvaluationFunction import text_scoring,get_n_val,get_top_n
+
+from TokenSatisfaction.EvaluationFunction import get_n_val, get_top_n, text_scoring
+
+
 class test_text_scoring(unittest.TestCase):
     def test_text_scoring(self):
         # Test case 1
@@ -7,14 +10,19 @@ class test_text_scoring(unittest.TestCase):
         freq_dist = {"keyword1": 0.2, "keyword2": 0.1, "keyword3": 0.5}
         threshold_n = 2
         expected_result = 0.24  # Calculate the expected result based on the formula
-        self.assertEqual(text_scoring(ranked_keywords, freq_dist, threshold_n), expected_result)
+        self.assertEqual(
+            text_scoring(ranked_keywords, freq_dist, threshold_n), expected_result
+        )
 
         # Test case 2
         ranked_keywords = {"keyword1": 0.4, "keyword2": 0.2}
         freq_dist = {"keyword1": 0.3, "keyword2": 0.2, "keyword3": 0.1}
         threshold_n = 3
         expected_result = 0.05333333333333334
-        self.assertEqual(text_scoring(ranked_keywords, freq_dist, threshold_n), expected_result)
+        self.assertEqual(
+            text_scoring(ranked_keywords, freq_dist, threshold_n), expected_result
+        )
+
 
 class test_get_n_val(unittest.TestCase):
     def test_get_n_val(self):
@@ -30,6 +38,7 @@ class test_get_n_val(unittest.TestCase):
         expected_result = 2  # All three terms have scores greater than or equal to 0.4
         self.assertEqual(get_n_val(average_td_idf_score, score_json), expected_result)
 
+
 class test_get_top_n(unittest.TestCase):
     def test_get_top_n(self):
         # Test case 1
@@ -44,5 +53,6 @@ class test_get_top_n(unittest.TestCase):
         expected_result = {"key3": 0.7}  # Top 1 element based on value
         self.assertEqual(get_top_n(dict_elem, n), expected_result)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

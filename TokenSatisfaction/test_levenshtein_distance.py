@@ -1,5 +1,8 @@
 import unittest
+
 from TokenSatisfaction.LevensteinDistance import levenshtein_distance
+
+
 class test_levenshtein_distance(unittest.TestCase):
     def test_levenshtein_distance(self):
         self.assertEqual(levenshtein_distance("kitten", "sitting"), 3)
@@ -11,5 +14,6 @@ class test_levenshtein_distance(unittest.TestCase):
         self.assertEqual(levenshtein_distance("", "xyz"), 3)
         self.assertEqual(levenshtein_distance("same", "same"), 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

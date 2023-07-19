@@ -1,5 +1,6 @@
 import Levenshtein
 
+
 def levenshtein_distance(str1: str, str2: str) -> int:
     """
     Calculates the Levenshtein distance between two input strings.

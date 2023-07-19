@@ -1,21 +1,22 @@
 import unittest
+
 from nltk.probability import FreqDist
 from nltk.tokenize import sent_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 from TokenSatisfaction.AbstractFunctions import (
+    alphabets,
     array_extend,
+    average_td_idf_score,
+    check_sent,
     fallback_detection,
     fallback_tfidf_evaluation,
-    alphabets,
     freq_dist,
-    check_sent,
     strip_non_alpha_dash,
-    average_td_idf_score,
 )
 
 
 class test_abstract_function(unittest.TestCase):
-
     def test_array_extend(self):
         arr1 = [1, 2, 3]
         arr2 = [4, 5, 6]
@@ -23,8 +24,6 @@ class test_abstract_function(unittest.TestCase):
         self.assertEqual(arr1, [1, 2, 3, 4, 5, 6])
 
     def test_fallback_detection(self):
-        
-
         json = {"a": 0, "b": 0, "c": 0}
         result = fallback_detection(json)
         self.assertEqual(result, 404)

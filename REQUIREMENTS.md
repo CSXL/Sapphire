@@ -23,7 +23,6 @@ The model is capable of evaluating videos with transcription enabled only and of
 - Requirement 3: The transcription output shall be time-aligned, associating each word or phrase with its corresponding timestamp in the video.
 - Requirement 4: The system shall handle speaker diarization, distinguishing between multiple speakers in the video and attributing the transcribed text accordingly.
 
-
 ### 4.2. Text Preprocessing
 
 [Provide a clear and concise description of the feature, including its purpose and any relevant user stories or scenarios.]
@@ -32,7 +31,6 @@ The model is capable of evaluating videos with transcription enabled only and of
 - Requirement 2: The system shall handle capitalization variations, applying techniques such as lowercasing or case normalization to ensure consistent processing and matching.
 - Requirement 3: The scoring model shall remove commonly occurring words or stop words that do not contribute significantly to the overall meaning or scoring of the text.
 - Requirement 4: The scoring model shall handle negation or polarity modifications, accounting for terms that change their meaning based on negations or intensifiers.
-  
 
 ### 4.3. TF-IDF Evaluation
 
@@ -45,7 +43,6 @@ The model is capable of evaluating videos with transcription enabled only and of
 - Requirement 5: The system shall allow for customizable adjustments to the TF-IDF weighting scheme, enabling users to assign different weights or importance factors to specific terms or groups of terms.
 - Requirement 6: TF-IDF (Term Frequency-Inverse Document Frequency) evaluation shall involve additive smoothing to work on a variety on transcripts.
 
-
 ### 4.3. Score Assessment
 
 [Provide a clear and concise description of the feature, including its purpose and any relevant user stories or scenarios.]
@@ -56,7 +53,6 @@ The model is capable of evaluating videos with transcription enabled only and of
 - Requirement 4: The system shall provide flexibility in adjusting the criteria and their weights to accommodate changes in scoring requirements or domain-specific variations.
 - Requirement 5: The scoring model shall generate an overall score based on the calculated averages, representing the comprehensive assessment of the input text across multiple dimensions.
 - Requirement 6: The system shall present the individual criterion scores and the overall score to users in a clear and easily interpretable format.
-  
 
 ## 5. Non-Functional Requirements
 
@@ -65,19 +61,16 @@ The model is capable of evaluating videos with transcription enabled only and of
 - Requirement 1: The NLP scoring model shall exhibit high accuracy in predicting and assigning scores to text data based on predefined criteria.
 - Requirement 2: The model should demonstrate precise scoring capabilities, minimizing false positives and false negatives in its predictions.
 - Requirement 3: The scoring model should be able to handle noisy or imperfect text data, applying appropriate preprocessing and normalization techniques to enhance accuracy.
-  
 
 ### 5.2. Performance
 
 - Requirement 1: The scoring model should provide rapid results for every transcript
 - Requirement 2: The system should be able to handle a high volume of scoring requests concurrently, maintaining acceptable response times and performance.
 - Requirement 3: The scoring model should demonstrate efficient resource utilization, minimizing computational and memory requirements for scoring operations.
-  
 
 ### 5.3. Security
 
 - Requirement 1: The system should incorporate appropriate security measures to protect API credentials such as the `api_key`.
-  
 
 ## 6. Constraints
 

@@ -1,8 +1,10 @@
-
 import unittest
 from typing import Dict
-from TokenSatisfaction.LevensteinDistance import levenshtein_distance
+
 from TokenSatisfaction.AhoCorasick import get_closest_score_from_tfidf_dict
+from TokenSatisfaction.LevensteinDistance import levenshtein_distance
+
+
 class test_get_closest_score_from_tfidf_dict(unittest.TestCase):
     def test_get_closest_score_from_tfidf_dict(self):
         tfidf_dict = {
@@ -14,9 +16,6 @@ class test_get_closest_score_from_tfidf_dict(unittest.TestCase):
         print(closest_key)
         self.assertEqual(closest_key, None)
 
-        
-
 
 if __name__ == "__main__":
     unittest.main()
-
