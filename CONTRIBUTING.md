@@ -64,9 +64,9 @@ We are not responsible for any charges incurred by your Google Cloud accounts.
 
 ### Downloading the Project
 
-To Download the project, you will need to have [Python](https://www.python.org/) and [Make](https://www.gnu.org/software/make/) installed.
+To Download the project, you will need to have [Python](https://www.python.org/) and [Make](https://www.gnu.org/software/make/) installed if you are using the general version. However, there is a specific implementation in [Rust](https://www.rust-lang.org/) available inside the [rust](rust) folder.
 
-To download dependencies for the project, run `make download`.This will install all the resources needed for Sapphire to run
+To download dependencies for the project, run `make download`.This will install all the resources needed for Sapphire to run for both the Python and Rust version
 
 ### Running Tests
 
@@ -75,11 +75,12 @@ Run `make test` to run all the unit tests in the project. We are using the [unit
 ### Linting
 
 Linting is done with [trunk](https://trunk.io), there are common IDE plugins for it. The binary is provided in the repo, so you can run `./trunk fmt` (`make lint`) or `./trunk fmt --all` to lint the project. In order to lint the files in the codebase, run `make link`, then `make check` to check the linting.
-
-### Running the project
-
+If you are using the Rust version, we are using [Clippy](https://doc.rust-lang.org/nightly/clippy/) to lint the source code. Ultimately, the command remains the same.
+### Running the project(Python)
 Run `make run` to execute the project for a specific YouTube video by passing the Video ID into the [Sapphire](sapphire.py) function.
 
+### Running the project(Rust)
+Open up two terminal windows to run the python server, which will be used for tokenization and lexical analysis, and another window for running the main program. On one terminal window, enter the command `make run_server` and on the other window, enter the command `make run_main`.
 ## Contributing
 
 ### Code of Conduct
