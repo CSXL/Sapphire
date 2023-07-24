@@ -94,4 +94,4 @@ TF-IDF (Term Frequency-Inverse Document Frequency) evaluation is a crucial part 
 
 ## Current Status
 
-The current status of the package is that it is undergoing MVP (Minimum Viable Product) development. The evaluations are currently being optimized to enhance performance. Notably, Sapphire now possesses the capability to evaluate transcripts of video lengths up to one day in mere seconds.
+The current status of the package is that it is in its Beta stage. The evaluations are currently being optimized to enhance performance. Notably, Sapphire now possesses the capability to evaluate transcripts of video lengths up to one day in mere seconds.
