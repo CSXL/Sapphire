@@ -109,4 +109,4 @@ We welcome contributions of all kinds. Here are some examples of the types of co
 
 ## Thank You
 
-Thank you for taking the time to read this document. We hope you enjoy using Sapphire and that it helps you in your work. If you have any questions, comments, or concerns, feel free to reach out to us at [opensource@csxlabs.org](mailto:opensource@csxlabs.org). If you have any business inquiries about Solus or CSX Labs, fill out our [contact form](https://csxlabs.org/#contact) or email us at [info@csxlabs.org](mailto:info@csxlabs.org).
+Thank you for taking the time to read this document. We hope you enjoy using Sapphire and that it helps you in your work. If you have any questions, comments, or concerns, feel free to reach out to us at [opensource@csxlabs.org](mailto:opensource@csxlabs.org). If you have any business inquiries about Sapphire or CSX Labs, fill out our [contact form](https://csxlabs.org/#contact) or email us at [info@csxlabs.org](mailto:info@csxlabs.org).
