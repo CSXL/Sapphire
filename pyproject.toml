@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Sapphire"
+version = "0.0.1"
+authors = [
+  { name="Srinidhi Srujan Murthy", email="srujanm@csxlabs.org" },
+]
+description = "A NLP based model that ranks transcripts from a given YouTube video with the help of TF-IDF scores from a single trancript."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/CSXL/Sapphire"
+Issues = "https://github.com/CSXL/Sapphire"
